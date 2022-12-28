@@ -5,6 +5,7 @@ go 1.19
 require (
 	github.com/aliyun/aliyun-oss-go-sdk v2.2.6+incompatible
 	go.uber.org/zap v1.24.0
+	golang.org/x/crypto v0.4.0
 )
 
 require (

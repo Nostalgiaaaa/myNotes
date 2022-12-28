@@ -9,14 +9,15 @@ import (
 	"go.uber.org/zap"
 )
 
-// 正式环境建议用 viper 读取 yaml 替换
+// 仅作为参考demo
+// 出于安全考虑，正式环境请用读取配置文件的方式替换
 var (
 	AliyunOSSBasePath        = "xxxxx"
 	AliyunOSSBucketUrl       = "xxxxx"
 	AliyunOSSEndpoint        = "xxxxx"
-	AliyunOSSAccessKeyId     = ""
-	AliyunOSSAccessKeySecret = ""
-	AliyunOSSBucketName      = ""
+	AliyunOSSAccessKeyId     = "xxxxx"
+	AliyunOSSAccessKeySecret = "xxxxx"
+	AliyunOSSBucketName      = "xxxxx"
 )
 
 type AliyunOSS struct{}
