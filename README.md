@@ -1,3 +1,3 @@
 # myNotes
 
-各种命令以及demo。
+个人常用命令以及demo。
