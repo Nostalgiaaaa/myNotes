@@ -16,3 +16,12 @@ pip install --upgrade pip
 ```shell
 pip install docker-compose
 ```
+
+
+```shell
+docker-compose up -d
+
+docker-compose down
+
+docker-compose pull
+```
