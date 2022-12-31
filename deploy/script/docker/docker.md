@@ -1,5 +1,8 @@
 ### 1.1.安装Docker
 ```shell
+//官方文档
+https://docs.docker.com/engine/install/centos/
+
 yum install -y yum-utils device-mapper-persistent-data lvm2    //安装必要工具
 yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo  //设置yum源
 yum install -y docker-ce  //下载docker
