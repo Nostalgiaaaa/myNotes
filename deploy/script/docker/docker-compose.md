@@ -12,6 +12,13 @@ pip install --upgrade pip
 ```
 
 
+```shell
+//requests 报错
+
+pip install --ignore-installed requests
+```
+
+
 ### pip安装docker-compose 
 ```shell
 pip install docker-compose
