@@ -22,6 +22,8 @@ export PATH=$PATH:$GOROOT/bin
 #配置生效
 source /etc/profile
 
+
+go env -w GO111MODULE=on
 ```
 
 执行 go version 命令查看Go版本如下，则已安装成功。
