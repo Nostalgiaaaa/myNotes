@@ -19,3 +19,14 @@ apt update -y  # 升级packages
 
 apt install wget curl sudo vim git -y  # 安装常用的软件
 ```
+
+
+查询CPU占用前十名
+```shell
+ps auxw|head -1;ps -auxf|sort -nr -k3|head -10
+```
+
+查询内存占用前十名
+```shell
+ps auxw|head -1;ps -auxf|sort -nr -k4|head -10
+```
