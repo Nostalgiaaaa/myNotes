@@ -7,3 +7,12 @@ docker run -itd --network=host \
     --name x-ui --restart=unless-stopped \
     enwaiax/x-ui:latest
 ```
+
+### 重置设置
+```shell
+x-ui setting reset
+
+exit
+
+docker restart x-ui
+```
