@@ -18,6 +18,9 @@ sudo -i # 切换到root用户
 apt update -y  # 升级packages
 
 apt install wget curl sudo vim git -y  # 安装常用的软件
+
+#体检
+wget -N --no-check-certificate https://raw.githubusercontent.com/V2RaySSR/vps/master/vpstest.sh && bash vpstest.sh
 ```
 
 
