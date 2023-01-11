@@ -21,6 +21,9 @@ apt install wget curl sudo vim git -y  # 安装常用的软件
 
 #体检
 wget -N --no-check-certificate https://raw.githubusercontent.com/V2RaySSR/vps/master/vpstest.sh && bash vpstest.sh
+
+#回程
+curl https://raw.githubusercontent.com/zhucaidan/mtr_trace/main/mtr_trace.sh|bash  # 检测回程脚本
 ```
 
 
