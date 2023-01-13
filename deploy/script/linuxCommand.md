@@ -11,7 +11,7 @@ netstat -ntulp | grep 80   //查看所有80端口使用情况
 tar -zxvf xxxxx.tar.gz -C /specific dir 
 ```
 
-### Debain常用环境
+### Debain常用
 ```shell
 sudo -i # 切换到root用户
 
@@ -24,6 +24,10 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/V2RaySSR/vps/ma
 
 #回程
 curl https://raw.githubusercontent.com/zhucaidan/mtr_trace/main/mtr_trace.sh|bash  # 检测回程脚本
+
+奈飞脚本
+
+bash <(curl -L -s https://raw.githubusercontent.com/lmc999/RegionRestrictionCheck/main/check.sh)
 ```
 
 
