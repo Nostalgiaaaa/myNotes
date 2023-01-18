@@ -8,6 +8,8 @@ netstat -ntulp | grep 80   //查看所有80端口使用情况
 
 #### tar
 ```shell
+tar zcvf test.zip.tar  test/
+
 tar -zxvf xxxxx.tar.gz -C /specific dir 
 ```
 
