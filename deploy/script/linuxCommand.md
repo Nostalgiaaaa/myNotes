@@ -22,6 +22,7 @@ apt update -y  # 升级packages
 apt install wget curl sudo vim git -y  # 安装常用的软件
 
 apt install -y docker.io
+service docker start #启动docker服务
 
 #体检
 curl -LsO bench.monster/speedtest.sh; bash speedtest.sh -Asia
