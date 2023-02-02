@@ -26,9 +26,10 @@ service docker start #启动docker服务
 
 #体检
 curl -LsO bench.monster/speedtest.sh; bash speedtest.sh -Asia
-
 wget -qO- yabs.sh | bash
 
+#综合工具箱
+wget -O box.sh https://raw.githubusercontent.com/BlueSkyXN/SKY-BOX/main/box.sh && chmod +x box.sh && clear && ./box.sh
 
 #回程
 curl https://raw.githubusercontent.com/zhucaidan/mtr_trace/main/mtr_trace.sh|bash  # 检测回程脚本
