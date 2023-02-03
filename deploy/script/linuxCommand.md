@@ -6,11 +6,16 @@ netstat -ntlp              //查看当前所有tcp端口
 netstat -ntulp | grep 80   //查看所有80端口使用情况
 ```
 
-#### tar
+### tar
 ```shell
 tar zcvf test.zip.tar  test/
 
 tar -zxvf xxxxx.tar.gz -C /specific dir 
+```
+
+### ssh
+```shell
+ssh -L port:127.0.0.1:port root@sship
 ```
 
 ### Debain常用
