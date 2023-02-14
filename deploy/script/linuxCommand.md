@@ -31,6 +31,7 @@ service docker start #启动docker服务
 
 #体检
 curl -LsO bench.monster/speedtest.sh; bash speedtest.sh -Asia
+wget -q https://github.com/Aniverse/A/raw/i/a && bash a
 wget -qO- yabs.sh | bash
 
 #综合工具箱
