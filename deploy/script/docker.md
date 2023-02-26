@@ -7,6 +7,11 @@ https://docs.docker.com/engine/install/
 curl -fsSL https://get.docker.com -o get-docker.sh
 DRY_RUN=1 sudo sh ./get-docker.sh
 
+//apparmor 问题
+sudo apt-get install apparmor
+sudo service apparmor restart # Just in case
+sudo service docker restart
+
 yum install -y yum-utils device-mapper-persistent-data lvm2    //安装必要工具
 yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo  //设置yum源
 yum install -y docker-ce  //下载docker
