@@ -1,0 +1,19 @@
+---
+services:
+  emby:
+    image: lscr.io/linuxserver/emby:latest
+    container_name: emby
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Shanghai
+    volumes:
+      - ./library:/config
+      - /mnt/video/tv:/data/tv
+      - /mnt/video/movie:/data/movie
+      - /mnt/video/av:/data/av
+      - /mnt/video/tv:/data/tv
+    ports:
+      - 8096:8096
+      - 8920:8920 #optional
+    restart: unless-stopped
