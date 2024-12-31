@@ -18,6 +18,12 @@ tar -zxvf xxxxx.tar.gz -C /specific dir
 ssh -L port:127.0.0.1:port root@sship
 ```
 
+### QB
+```
+WebUI\HostHeaderValidation=false 
+WebUI\CSRFProtection=false
+```
+
 ### Debain常用
 ```shell
 sudo -i # 切换到root用户
