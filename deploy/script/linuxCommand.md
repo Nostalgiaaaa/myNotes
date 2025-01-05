@@ -36,6 +36,19 @@ apt install wget curl sudo vim git -y  # 安装常用的软件
 curl -fsSL https://get.docker.com -o get-docker.sh
 DRY_RUN=1 sudo sh ./get-docker.sh
 
+
+sudo mkdir -p /etc/docker
+sudo tee /etc/docker/daemon.json <<-'EOF'
+{
+  "registry-mirrors": ["https://1tj0qjvj.mirror.aliyuncs.com"]
+}
+EOF
+sudo systemctl daemon-reload
+sudo systemctl restart docker
+
+
+
+
 #体检
 curl -LsO bench.monster/speedtest.sh; bash speedtest.sh -Asia
 wget -q https://github.com/Aniverse/A/raw/i/a && bash a
