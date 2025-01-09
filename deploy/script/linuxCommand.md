@@ -32,7 +32,7 @@ DRY_RUN=1 sudo sh ./get-docker.sh
 sudo mkdir -p /etc/docker
 sudo tee /etc/docker/daemon.json <<-'EOF'
 {
-  "registry-mirrors": ["https://1tj0qjvj.mirror.aliyuncs.com"]
+  "registry-mirrors": ["https://XXX.com"]
 }
 EOF
 sudo systemctl daemon-reload
