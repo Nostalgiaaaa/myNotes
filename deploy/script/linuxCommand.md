@@ -40,6 +40,8 @@ sudo systemctl restart docker
 
 
 wget -qO- yabs.sh | bash
+```
+
 
 ### Linux查看端口占用情况
 ```shell
