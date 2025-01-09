@@ -1,14 +1,6 @@
-### Linux查看端口占用情况
-```shell
-lsof -i:端口号
-
-netstat -ntlp              //查看当前所有tcp端口
-netstat -ntulp | grep 80   //查看所有80端口使用情况
-```
-
 ### tar
 ```shell
-tar -czvf test.zip.tar  test/
+tar -czvf test.tar.gz  data/
 
 tar -zxvf xxxxx.tar.gz -C /specific dir 
 ```
@@ -47,23 +39,15 @@ sudo systemctl daemon-reload
 sudo systemctl restart docker
 
 
-
-
-#体检
-curl -LsO bench.monster/speedtest.sh; bash speedtest.sh -Asia
-wget -q https://github.com/Aniverse/A/raw/i/a && bash a
 wget -qO- yabs.sh | bash
 
-#综合工具箱
-wget -O box.sh https://raw.githubusercontent.com/BlueSkyXN/SKY-BOX/main/box.sh && chmod +x box.sh && clear && ./box.sh
+### Linux查看端口占用情况
+```shell
+lsof -i:端口号
 
-#回程
-curl https://raw.githubusercontent.com/zhucaidan/mtr_trace/main/mtr_trace.sh|bash  # 检测回程脚本
-
-#奈飞脚本
-bash <(curl -L -s https://raw.githubusercontent.com/lmc999/RegionRestrictionCheck/main/check.sh)
+netstat -ntlp              //查看当前所有tcp端口
+netstat -ntulp | grep 80   //查看所有80端口使用情况
 ```
-
 
 查询CPU占用前十名
 ```shell
