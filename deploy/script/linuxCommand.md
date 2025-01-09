@@ -24,10 +24,11 @@ apt update -y  # 升级packages
 
 apt install wget curl sudo vim git -y  # 安装常用的软件
 
+//docker
 curl -fsSL https://get.docker.com -o get-docker.sh
 DRY_RUN=1 sudo sh ./get-docker.sh
 
-
+//docker加速
 sudo mkdir -p /etc/docker
 sudo tee /etc/docker/daemon.json <<-'EOF'
 {
@@ -37,6 +38,7 @@ EOF
 sudo systemctl daemon-reload
 sudo systemctl restart docker
 
+//swap
 swapon --show
 sudo dd if=/dev/zero of=/swapfile bs=1M count=2048
 sudo chmod 600 /swapfile
