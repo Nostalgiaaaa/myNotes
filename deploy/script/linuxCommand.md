@@ -47,6 +47,15 @@ sudo swapon /swapfile
 swapon --show
 echo "/swapfile none swap sw 0 0" >>/etc/fstab
 
+//disk
+fdisk -l
+mkfs -t ext4 /dev/vdb
+mkdir /data
+mount /dev/vdb /data
+df -TH
+echo "/dev/vdb /data   ext4 defaults,nofail    0   0" >>/etc/fstab
+mount -a
+
 wget -qO- yabs.sh | bash
 ```
 
