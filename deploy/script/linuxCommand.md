@@ -24,7 +24,6 @@ apt update -y  # 升级packages
 
 apt install wget curl sudo vim git -y  # 安装常用的软件
 
-//Debian
 curl -fsSL https://get.docker.com -o get-docker.sh
 DRY_RUN=1 sudo sh ./get-docker.sh
 
@@ -38,6 +37,13 @@ EOF
 sudo systemctl daemon-reload
 sudo systemctl restart docker
 
+swapon --show
+sudo dd if=/dev/zero of=/swapfile bs=1M count=2048
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+swapon --show
+echo "/swapfile none swap sw 0 0" >>/etc/fstab
 
 wget -qO- yabs.sh | bash
 ```
