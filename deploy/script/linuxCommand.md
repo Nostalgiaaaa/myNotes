@@ -38,6 +38,12 @@ EOF
 sudo systemctl daemon-reload
 sudo systemctl restart docker
 
+//Storage Box
+apt-get install cifs-utils
+mkdir /xxx
+mount.cifs -o user=你的User name,pass=你的密码 //你的CIFS地址 /xxx
+
+
 //swap
 swapon --show
 sudo dd if=/dev/zero of=/swapfile bs=1M count=2048
