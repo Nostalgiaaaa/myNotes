@@ -20,6 +20,8 @@ WebUI\CSRFProtection=false
 ```shell
 sudo -i # 切换到root用户
 
+vim /etc/ssh/sshd_config
+
 apt update -y  # 升级packages
 
 apt install wget curl sudo vim git -y  # 安装常用的软件
