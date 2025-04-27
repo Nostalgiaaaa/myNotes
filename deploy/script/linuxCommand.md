@@ -26,6 +26,10 @@ apt update -y  # 升级packages
 
 apt install wget curl sudo vim git -y  # 安装常用的软件
 
+sudo chown -R 1000:1000 ./downloads
+sudo chmod -R 775 ./downloads
+ls -ld ./downloads
+
 //docker
 curl -fsSL https://get.docker.com -o get-docker.sh
 DRY_RUN=1 sudo sh ./get-docker.sh
