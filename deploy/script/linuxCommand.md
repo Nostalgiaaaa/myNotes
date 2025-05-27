@@ -50,6 +50,13 @@ mkdir /xxx
 mount.cifs -o user=你的User name,pass=你的密码 //你的CIFS地址 /xxx
 
 
+### 反代CF
+location / {
+proxy_ssl_name $server;
+proxy_ssl_server_name on;
+proxy_pass $forward_scheme://$server:$port;
+}
+
 //swap
 swapon --show
 sudo dd if=/dev/zero of=/swapfile bs=1M count=2048
