@@ -10,6 +10,19 @@ tar -zxvf xxxxx.tar.gz -C /specific dir
 ssh -L port:127.0.0.1:port root@sship
 ```
 
+### claw
+```shell
+passwd openclaw &&su - openclaw
+openclaw config set gateway.auth.token $(openssl rand -hex 24)
+openclaw gateway restart
+openclaw models set xxxx.xx
+ss -lntp | grep 18789
+openclaw dashboard
+
+ssh -N -L 18789:127.0.0.1:18789 openclaw@你的服务器IP
+
+```
+
 ### QB
 ```
 WebUI\HostHeaderValidation=false 
