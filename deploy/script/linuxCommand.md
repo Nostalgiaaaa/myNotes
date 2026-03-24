@@ -12,6 +12,10 @@ ssh -L port:127.0.0.1:port root@sship
 
 ### claw
 ```shell
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+source ~/.bashrc
+nvm install --lts
+
 passwd openclaw &&su - openclaw
 openclaw config set gateway.auth.token $(openssl rand -hex 24)
 openclaw gateway restart
