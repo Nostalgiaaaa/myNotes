@@ -16,6 +16,12 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 source ~/.bashrc
 nvm install --lts
 
+# root问题
+loginctl enable-linger root
+export XDG_RUNTIME_DIR=/run/user/0
+openclaw gateway install
+openclaw gateway start
+
 passwd openclaw &&su - openclaw
 openclaw config set gateway.auth.token $(openssl rand -hex 24)
 openclaw gateway restart
